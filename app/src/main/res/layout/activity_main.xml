@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Enter Personal Data:"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="22dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Username"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="22dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="Email"
+            android:ems="10"
+            android:id="@+id/editTextTextEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="22dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:text="Phone"
+            android:ems="10"
+            android:id="@+id/editTextPhone"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="22dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:text="City"
+            android:ems="10"
+            android:id="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="22dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="Password"
+            android:ems="10"
+            android:id="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="22dp"/>
+    <TextView
+            android:text=""
+            android:layout_width="160dp"
+            android:layout_height="30dp" android:id="@+id/Username"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/SubmitButton" android:layout_marginTop="24dp"/>
+    <TextView
+            android:text=""
+            android:layout_width="160dp"
+            android:layout_height="30dp" android:id="@+id/Email"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/Username"/>
+    <TextView
+            android:text=""
+            android:layout_width="160dp"
+            android:layout_height="30dp" android:id="@+id/Phone"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/Email"/>
+    <TextView
+            android:text=""
+            android:layout_width="160dp"
+            android:layout_height="30dp" android:id="@+id/Password"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/City"/>
+    <TextView
+            android:text=""
+            android:layout_width="160dp"
+            android:layout_height="30dp" android:id="@+id/City"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/Phone"/>
+    <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/SubmitButton"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            android:onClick = "submit"
+            android:layout_marginTop="28dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="83dp"/>
+</android.support.constraint.ConstraintLayout>
